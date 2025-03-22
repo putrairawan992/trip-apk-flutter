@@ -1,3 +1,4 @@
+import 'package:besttrips/models/review_model.dart';
 import 'package:besttrips/models/trip_model.dart';
 
 List<Trip> allTrips = [
@@ -12,6 +13,29 @@ List<Trip> allTrips = [
     rating: 4.8,
     reviews: 120,
     isPrivate: false,
+    reviewList: [
+      Review(
+        name: 'Dewi Ayu',
+        photoUrl: 'https://randomuser.me/api/portraits/women/1.jpg',
+        rating: 5.0,
+        comment: 'Perjalanan yang luar biasa, guide-nya ramah dan tempatnya indah!',
+      ),
+      Review(
+        name: 'Rizky Hakim',
+        photoUrl: 'https://randomuser.me/api/portraits/men/2.jpg',
+        rating: 4.5,
+        comment: 'Sangat menyenangkan, walaupun transport agak telat sedikit.',
+      ),
+      Review(
+        name: 'Intan Sari',
+        photoUrl: 'https://randomuser.me/api/portraits/women/3.jpg',
+        rating: 4.8,
+        comment: 'Aktivitasnya seru, banyak spot foto keren!',
+      ),
+    ],
+    summary: 'Explore the best spots with experienced guides, enjoy local culture, and create unforgettable memories on this trip.',
+    includeExclude: '✔ Transport, ✔ Meals, ✔ Guide\n✘ Personal Expenses, ✘ Insurance',
+    terms: 'Booking minimal 7 hari sebelum keberangkatan. Pembatalan maksimal H-3 dengan pengembalian dana 80%.',
   ),
   Trip(
     title: 'Komodo Private Sailing',
@@ -24,6 +48,29 @@ List<Trip> allTrips = [
     rating: 5.0,
     reviews: 45,
     isPrivate: true,
+    reviewList: [
+      Review(
+        name: 'Agus Pratama',
+        photoUrl: 'https://randomuser.me/api/portraits/men/4.jpg',
+        rating: 5.0,
+        comment: 'Sailing yang tak terlupakan, makanannya enak dan nyaman!',
+      ),
+      Review(
+        name: 'Lina Mardiana',
+        photoUrl: 'https://randomuser.me/api/portraits/women/5.jpg',
+        rating: 4.9,
+        comment: 'Pemandangan sangat indah, worth every penny.',
+      ),
+      Review(
+        name: 'Fajar Setiawan',
+        photoUrl: 'https://randomuser.me/api/portraits/men/6.jpg',
+        rating: 5.0,
+        comment: 'Privasi terjaga, cocok untuk honeymoon.',
+      ),
+    ],
+    summary: 'Enjoy private sailing across the beautiful Komodo islands with full privacy and premium services onboard.',
+    includeExclude: '✔ Private Boat, ✔ Meals, ✔ Guide\n✘ Flight Tickets, ✘ Alcoholic Drinks',
+    terms: 'Pembayaran lunas maksimal H-5. Tidak ada refund untuk pembatalan mendadak.',
   ),
   Trip(
     title: 'Lombok Beach Escape',
@@ -36,6 +83,29 @@ List<Trip> allTrips = [
     rating: 4.5,
     reviews: 80,
     isPrivate: false,
+    reviewList: [
+      Review(
+        name: 'Yuni Rahma',
+        photoUrl: 'https://randomuser.me/api/portraits/women/7.jpg',
+        rating: 4.5,
+        comment: 'Pantai bersih, ombak tenang, sangat cocok untuk keluarga.',
+      ),
+      Review(
+        name: 'Hendra Saputra',
+        photoUrl: 'https://randomuser.me/api/portraits/men/8.jpg',
+        rating: 4.7,
+        comment: 'Sunset-nya luar biasa, penginapan nyaman.',
+      ),
+      Review(
+        name: 'Nina Kartika',
+        photoUrl: 'https://randomuser.me/api/portraits/women/9.jpg',
+        rating: 4.3,
+        comment: 'Akses agak jauh tapi terbayar dengan keindahan pantainya.',
+      ),
+    ],
+    summary: 'Relax on Lombok’s pristine beaches, enjoy the tranquility, and soak in the island’s natural beauty.',
+    includeExclude: '✔ Accommodation, ✔ Meals, ✔ Beach Activities\n✘ Transport, ✘ Travel Insurance',
+    terms: 'Booking minimal H-2. Refund 50% untuk pembatalan sebelum H-1.',
   ),
   Trip(
     title: 'Raja Ampat Luxury Cruise',
@@ -48,6 +118,29 @@ List<Trip> allTrips = [
     rating: 4.9,
     reviews: 60,
     isPrivate: true,
+    reviewList: [
+      Review(
+        name: 'Budi Hartono',
+        photoUrl: 'https://randomuser.me/api/portraits/men/10.jpg',
+        rating: 5.0,
+        comment: 'Cruise mewah, service sangat memuaskan!',
+      ),
+      Review(
+        name: 'Siti Nurhaliza',
+        photoUrl: 'https://randomuser.me/api/portraits/women/11.jpg',
+        rating: 4.8,
+        comment: 'Layanan lengkap dan pemandangan underwater menakjubkan.',
+      ),
+      Review(
+        name: 'Adi Nugroho',
+        photoUrl: 'https://randomuser.me/api/portraits/men/12.jpg',
+        rating: 5.0,
+        comment: 'Pengalaman mewah yang wajib dicoba sekali seumur hidup.',
+      ),
+    ],
+    summary: 'Experience luxury while exploring the breathtaking Raja Ampat islands aboard a top-class cruise.',
+    includeExclude: '✔ Luxury Cabin, ✔ All Meals, ✔ Snorkeling Gear\n✘ Flight, ✘ Personal Expenses',
+    terms: 'Deposit 50% saat booking, pelunasan maksimal H-10. Tidak ada refund.',
   ),
   Trip(
     title: 'Yogyakarta Cultural Trip',
@@ -60,5 +153,28 @@ List<Trip> allTrips = [
     rating: 4.6,
     reviews: 95,
     isPrivate: false,
+    reviewList: [
+      Review(
+        name: 'Rina Permata',
+        photoUrl: 'https://randomuser.me/api/portraits/women/13.jpg',
+        rating: 4.5,
+        comment: 'Banyak tempat bersejarah yang menarik, guide-nya informatif.',
+      ),
+      Review(
+        name: 'Dimas Aditya',
+        photoUrl: 'https://randomuser.me/api/portraits/men/14.jpg',
+        rating: 4.7,
+        comment: 'Keraton dan Candi Prambanan wajib dikunjungi!',
+      ),
+      Review(
+        name: 'Fitria Handayani',
+        photoUrl: 'https://randomuser.me/api/portraits/women/15.jpg',
+        rating: 4.6,
+        comment: 'Makanan tradisional enak, harga terjangkau.',
+      ),
+    ],
+    summary: 'Dive into Yogyakarta’s rich culture, visit ancient temples, and enjoy traditional culinary delights.',
+    includeExclude: '✔ Transport, ✔ Meals, ✔ Entry Tickets\n✘ Personal Shopping, ✘ Optional Tours',
+    terms: 'Booking minimal H-3. Pembatalan H-2 dikenakan biaya 30%.',
   ),
 ];

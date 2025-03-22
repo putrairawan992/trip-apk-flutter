@@ -1,3 +1,5 @@
+import 'package:besttrips/models/trip_model.dart';
+import 'package:besttrips/screens/detail_screen.dart';
 import 'package:besttrips/screens/main_screen.dart';
 import 'package:besttrips/utils/theme.dart';
 import 'package:flutter/material.dart';
@@ -33,6 +35,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => MainScreen(),
+        '/details': (context) {
+          final args = ModalRoute.of(context)?.settings.arguments as Trip;
+          return DetailScreen(trip: args);
+        },
       },
     );
   }

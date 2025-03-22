@@ -15,7 +15,7 @@ class TripCard extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       elevation: 4,
       child: InkWell(
-        onTap: () => {},
+        onTap: () => Navigator.pushNamed(context, "/details", arguments: trip),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
